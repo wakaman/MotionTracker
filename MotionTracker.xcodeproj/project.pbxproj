@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B94F046268797B000AE5DBB /* TrackerMotionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B94F045268797B000AE5DBB /* TrackerMotionMgr.m */; };
+		8BCFBDC1268868CA003DD5EF /* MotionManagerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFBDC0268868CA003DD5EF /* MotionManagerWrapper.m */; };
+		8BDD2DCB2687875C000A82A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD2DCA2687875C000A82A3 /* Foundation.framework */; };
+		8BDD2DCD2687875C000A82A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD2DCC2687875C000A82A3 /* CoreGraphics.framework */; };
+		8BDD2DCF2687875C000A82A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD2DCE2687875C000A82A3 /* UIKit.framework */; };
+		8BDD2DD52687875C000A82A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD2DD32687875C000A82A3 /* InfoPlist.strings */; };
+		8BDD2DD72687875C000A82A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD2DD62687875C000A82A3 /* main.m */; };
+		8BDD2DDB2687875C000A82A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD2DDA2687875C000A82A3 /* AppDelegate.m */; };
+		8BDD2DDE2687875C000A82A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD2DDC2687875C000A82A3 /* Main.storyboard */; };
+		8BDD2DE12687875C000A82A3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD2DE02687875C000A82A3 /* FirstViewController.m */; };
+		8BDD2DE42687875C000A82A3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD2DE32687875C000A82A3 /* SecondViewController.m */; };
+		8BDD2DE62687875D000A82A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD2DE52687875D000A82A3 /* Images.xcassets */; };
+		8BDD2DED2687875D000A82A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD2DEC2687875D000A82A3 /* XCTest.framework */; };
+		8BDD2DEE2687875D000A82A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD2DCA2687875C000A82A3 /* Foundation.framework */; };
+		8BDD2DEF2687875D000A82A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD2DCE2687875C000A82A3 /* UIKit.framework */; };
+		8BDD2DF72687875D000A82A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD2DF52687875D000A82A3 /* InfoPlist.strings */; };
+		8BDD2DF92687875D000A82A3 /* MotionTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD2DF82687875D000A82A3 /* MotionTrackerTests.m */; };
+		8BDD2E0526878808000A82A3 /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD2E0326878808000A82A3 /* TrackerViewController.m */; };
+		8BDD2E0626878808000A82A3 /* TrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD2E0426878808000A82A3 /* TrackerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BDD2DF02687875D000A82A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD2DBF2687875C000A82A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BDD2DC62687875C000A82A3;
+			remoteInfo = MotionTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B94F044268797B000AE5DBB /* TrackerMotionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackerMotionMgr.h; path = Tracker/TrackerMotionMgr.h; sourceTree = "<group>"; };
+		8B94F045268797B000AE5DBB /* TrackerMotionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackerMotionMgr.m; path = Tracker/TrackerMotionMgr.m; sourceTree = "<group>"; };
+		8BCFBDBF268868CA003DD5EF /* MotionManagerWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MotionManagerWrapper.h; path = Tracker/MotionManagerWrapper.h; sourceTree = "<group>"; };
+		8BCFBDC0268868CA003DD5EF /* MotionManagerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MotionManagerWrapper.m; path = Tracker/MotionManagerWrapper.m; sourceTree = "<group>"; };
+		8BDD2DC72687875C000A82A3 /* MotionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDD2DCA2687875C000A82A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BDD2DCC2687875C000A82A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8BDD2DCE2687875C000A82A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8BDD2DD22687875C000A82A3 /* MotionTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotionTracker-Info.plist"; sourceTree = "<group>"; };
+		8BDD2DD42687875C000A82A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BDD2DD62687875C000A82A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BDD2DD82687875C000A82A3 /* MotionTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotionTracker-Prefix.pch"; sourceTree = "<group>"; };
+		8BDD2DD92687875C000A82A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BDD2DDA2687875C000A82A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BDD2DDD2687875C000A82A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BDD2DDF2687875C000A82A3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8BDD2DE02687875C000A82A3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8BDD2DE22687875C000A82A3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8BDD2DE32687875C000A82A3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8BDD2DE52687875D000A82A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BDD2DEB2687875D000A82A3 /* MotionTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDD2DEC2687875D000A82A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8BDD2DF42687875D000A82A3 /* MotionTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotionTrackerTests-Info.plist"; sourceTree = "<group>"; };
+		8BDD2DF62687875D000A82A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BDD2DF82687875D000A82A3 /* MotionTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionTrackerTests.m; sourceTree = "<group>"; };
+		8BDD2E0226878808000A82A3 /* TrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
+		8BDD2E0326878808000A82A3 /* TrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
+		8BDD2E0426878808000A82A3 /* TrackerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BDD2DC42687875C000A82A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDD2DCD2687875C000A82A3 /* CoreGraphics.framework in Frameworks */,
+				8BDD2DCF2687875C000A82A3 /* UIKit.framework in Frameworks */,
+				8BDD2DCB2687875C000A82A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDD2DE82687875D000A82A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDD2DED2687875D000A82A3 /* XCTest.framework in Frameworks */,
+				8BDD2DEF2687875D000A82A3 /* UIKit.framework in Frameworks */,
+				8BDD2DEE2687875D000A82A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B94F0432687976C00AE5DBB /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				8B94F044268797B000AE5DBB /* TrackerMotionMgr.h */,
+				8B94F045268797B000AE5DBB /* TrackerMotionMgr.m */,
+				8BCFBDBF268868CA003DD5EF /* MotionManagerWrapper.h */,
+				8BCFBDC0268868CA003DD5EF /* MotionManagerWrapper.m */,
+			);
+			name = Tracker;
+			sourceTree = "<group>";
+		};
+		8BDD2DBE2687875C000A82A3 = {
+			isa = PBXGroup;
+			children = (
+				8BDD2DD02687875C000A82A3 /* MotionTracker */,
+				8BDD2DF22687875D000A82A3 /* MotionTrackerTests */,
+				8BDD2DC92687875C000A82A3 /* Frameworks */,
+				8BDD2DC82687875C000A82A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BDD2DC82687875C000A82A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BDD2DC72687875C000A82A3 /* MotionTracker.app */,
+				8BDD2DEB2687875D000A82A3 /* MotionTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BDD2DC92687875C000A82A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BDD2DCA2687875C000A82A3 /* Foundation.framework */,
+				8BDD2DCC2687875C000A82A3 /* CoreGraphics.framework */,
+				8BDD2DCE2687875C000A82A3 /* UIKit.framework */,
+				8BDD2DEC2687875D000A82A3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BDD2DD02687875C000A82A3 /* MotionTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8B94F0432687976C00AE5DBB /* Tracker */,
+				8BDD2DD92687875C000A82A3 /* AppDelegate.h */,
+				8BDD2DDA2687875C000A82A3 /* AppDelegate.m */,
+				8BDD2DDC2687875C000A82A3 /* Main.storyboard */,
+				8BDD2DDF2687875C000A82A3 /* FirstViewController.h */,
+				8BDD2DE02687875C000A82A3 /* FirstViewController.m */,
+				8BDD2DE22687875C000A82A3 /* SecondViewController.h */,
+				8BDD2DE32687875C000A82A3 /* SecondViewController.m */,
+				8BDD2E0226878808000A82A3 /* TrackerViewController.h */,
+				8BDD2E0326878808000A82A3 /* TrackerViewController.m */,
+				8BDD2E0426878808000A82A3 /* TrackerViewController.xib */,
+				8BDD2DE52687875D000A82A3 /* Images.xcassets */,
+				8BDD2DD12687875C000A82A3 /* Supporting Files */,
+			);
+			path = MotionTracker;
+			sourceTree = "<group>";
+		};
+		8BDD2DD12687875C000A82A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BDD2DD22687875C000A82A3 /* MotionTracker-Info.plist */,
+				8BDD2DD32687875C000A82A3 /* InfoPlist.strings */,
+				8BDD2DD62687875C000A82A3 /* main.m */,
+				8BDD2DD82687875C000A82A3 /* MotionTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BDD2DF22687875D000A82A3 /* MotionTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BDD2DF82687875D000A82A3 /* MotionTrackerTests.m */,
+				8BDD2DF32687875D000A82A3 /* Supporting Files */,
+			);
+			path = MotionTrackerTests;
+			sourceTree = "<group>";
+		};
+		8BDD2DF32687875D000A82A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BDD2DF42687875D000A82A3 /* MotionTrackerTests-Info.plist */,
+				8BDD2DF52687875D000A82A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BDD2DC62687875C000A82A3 /* MotionTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BDD2DFC2687875D000A82A3 /* Build configuration list for PBXNativeTarget "MotionTracker" */;
+			buildPhases = (
+				8BDD2DC32687875C000A82A3 /* Sources */,
+				8BDD2DC42687875C000A82A3 /* Frameworks */,
+				8BDD2DC52687875C000A82A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionTracker;
+			productName = MotionTracker;
+			productReference = 8BDD2DC72687875C000A82A3 /* MotionTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BDD2DEA2687875D000A82A3 /* MotionTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BDD2DFF2687875D000A82A3 /* Build configuration list for PBXNativeTarget "MotionTrackerTests" */;
+			buildPhases = (
+				8BDD2DE72687875D000A82A3 /* Sources */,
+				8BDD2DE82687875D000A82A3 /* Frameworks */,
+				8BDD2DE92687875D000A82A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BDD2DF12687875D000A82A3 /* PBXTargetDependency */,
+			);
+			name = MotionTrackerTests;
+			productName = MotionTrackerTests;
+			productReference = 8BDD2DEB2687875D000A82A3 /* MotionTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BDD2DBF2687875C000A82A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					8BDD2DC62687875C000A82A3 = {
+						ProvisioningStyle = Manual;
+					};
+					8BDD2DEA2687875D000A82A3 = {
+						TestTargetID = 8BDD2DC62687875C000A82A3;
+					};
+				};
+			};
+			buildConfigurationList = 8BDD2DC22687875C000A82A3 /* Build configuration list for PBXProject "MotionTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 8BDD2DBE2687875C000A82A3;
+			productRefGroup = 8BDD2DC82687875C000A82A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BDD2DC62687875C000A82A3 /* MotionTracker */,
+				8BDD2DEA2687875D000A82A3 /* MotionTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BDD2DC52687875C000A82A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDD2DE62687875D000A82A3 /* Images.xcassets in Resources */,
+				8BDD2E0626878808000A82A3 /* TrackerViewController.xib in Resources */,
+				8BDD2DD52687875C000A82A3 /* InfoPlist.strings in Resources */,
+				8BDD2DDE2687875C000A82A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDD2DE92687875D000A82A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDD2DF72687875D000A82A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BDD2DC32687875C000A82A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDD2E0526878808000A82A3 /* TrackerViewController.m in Sources */,
+				8BDD2DE42687875C000A82A3 /* SecondViewController.m in Sources */,
+				8BDD2DDB2687875C000A82A3 /* AppDelegate.m in Sources */,
+				8B94F046268797B000AE5DBB /* TrackerMotionMgr.m in Sources */,
+				8BCFBDC1268868CA003DD5EF /* MotionManagerWrapper.m in Sources */,
+				8BDD2DE12687875C000A82A3 /* FirstViewController.m in Sources */,
+				8BDD2DD72687875C000A82A3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDD2DE72687875D000A82A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDD2DF92687875D000A82A3 /* MotionTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BDD2DF12687875D000A82A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BDD2DC62687875C000A82A3 /* MotionTracker */;
+			targetProxy = 8BDD2DF02687875D000A82A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BDD2DD32687875C000A82A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BDD2DD42687875C000A82A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BDD2DDC2687875C000A82A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BDD2DDD2687875C000A82A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BDD2DF52687875D000A82A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BDD2DF62687875D000A82A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BDD2DFA2687875D000A82A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BDD2DFB2687875D000A82A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BDD2DFD2687875D000A82A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionTracker/MotionTracker-Prefix.pch";
+				INFOPLIST_FILE = "MotionTracker/MotionTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BDD2DFE2687875D000A82A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionTracker/MotionTracker-Prefix.pch";
+				INFOPLIST_FILE = "MotionTracker/MotionTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8BDD2E002687875D000A82A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MotionTracker.app/MotionTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionTracker/MotionTracker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MotionTrackerTests/MotionTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8BDD2E012687875D000A82A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MotionTracker.app/MotionTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionTracker/MotionTracker-Prefix.pch";
+				INFOPLIST_FILE = "MotionTrackerTests/MotionTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BDD2DC22687875C000A82A3 /* Build configuration list for PBXProject "MotionTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BDD2DFA2687875D000A82A3 /* Debug */,
+				8BDD2DFB2687875D000A82A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BDD2DFC2687875D000A82A3 /* Build configuration list for PBXNativeTarget "MotionTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BDD2DFD2687875D000A82A3 /* Debug */,
+				8BDD2DFE2687875D000A82A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BDD2DFF2687875D000A82A3 /* Build configuration list for PBXNativeTarget "MotionTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BDD2E002687875D000A82A3 /* Debug */,
+				8BDD2E012687875D000A82A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BDD2DBF2687875C000A82A3 /* Project object */;
+}
