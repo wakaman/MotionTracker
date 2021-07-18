@@ -66,18 +66,33 @@
         // auto block = ^(CMAccelerometerData* accelermeterData, NSError* error) {};
         // typedef void (^CMAccelerometerHandler)(CMAccelerometerData *accelerometerData, NSError *error);
         //
+        typedef void (^CMAccelerometerHandler)(CMAccelerometerData* _Nullable accelerometerData, NSError* _Nullable error);
         
         [self.motionMgr startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
-            NSLog(@"what data goes here!");
-            NSLog(@"here we can place a singleton data centre here!");
+
+            if (nil == accelerometerData) {
+                
+                NSLog(@"accelerometer got nothing!");
+                if (error) {
+                    //
+                    // ...... Error handling here ......
+                    //
+                }
+                
+                return;
+            }
+            
+            NSLog(@"accelerometer x: %f, y: %f, z: %f, time: %f.", accelerometerData.acceleration.x,
+                  accelerometerData.acceleration.y, accelerometerData.acceleration.z, accelerometerData.timestamp);
+
         }];
     }
 
     
-    //
-    // self.motionMgr startAccelerometerUpdatesToQueue:<#(nonnull NSOperationQueue *)#> withHandler:<#^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error)handler#>
-    // CMAccelerometerData data;
-    //
+//
+// self.motionMgr startAccelerometerUpdatesToQueue:<#(nonnull NSOperationQueue *)#> withHandler:<#^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error)handler#>
+// CMAccelerometerData data;
+//
 //
 //    self.mManager = [[CMMotionManager alloc]init];
 //    self.mManager.deviceMotionUpdateInterval = 0.5;
@@ -151,8 +166,26 @@
          // auto block = ^(CMGyroData* accelermeterData, NSError* error) {};
          // typedef void (^CMGyroHandler)(CMAccelerometerData *accelerometerData, NSError *error);
          [self.motionMgr startGyroUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMGyroData * _Nullable gyroData, NSError * _Nullable error) {
-             NSLog(@"GyroData be handled here");
-             NSLog(@"here we can place a singleton data centre here!");
+             
+             if (nil == gyroData) {
+                 
+                 if (error) {
+                     //
+                     // ...... Error handling ......
+                     //
+                 }
+                 
+                 return;
+             }
+             
+             NSLog(@"Gyroscope x: %f, y: %f, z: %f, time: %f.", gyroData.rotationRate.x, gyroData.rotationRate.y, gyroData.rotationRate.z, gyroData.timestamp);
+
+             //
+             // gyroData.rotationRate.x;
+             // gyroData.rotationRate.y;
+             // gyroData.rotationRate.z;
+             // gyroData.timestamp;
+             //
          }];
      }
     
@@ -211,7 +244,23 @@
         
         //<#^(CMMagnetometerData * _Nullable magnetometerData, NSError * _Nullable error)handler#>
         [self.motionMgr startMagnetometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMMagnetometerData * _Nullable magnetometerData, NSError * _Nullable error) {
-            NSLog(@"here we parsed the input data!");
+            // NSLog(@"here we parsed the input data!");
+            
+            if (!magnetometerData) {
+                
+                // ...... magnetometer ......
+                if (error) {
+                    // ...... Error handling ......
+                }
+            }
+            
+            //
+            // magnetometerData.magneticField.x;
+            // magnetometerData.magneticField.y;
+            // magnetometerData.magneticField.z;
+            // magnetometerData.timestamp;
+            //
+            NSLog(@"Magnetometer x: %f, y: %f, z: %f, time: %f.", magnetometerData.magneticField.x, magnetometerData.magneticField.y, magnetometerData.magneticField.z, magnetometerData.timestamp);
         }];
     }
     
@@ -258,7 +307,25 @@
         
         [self.motionMgr startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMDeviceMotion * _Nullable motion, NSError * _Nullable error) {
             
-            NSLog(@"here we are handling the device motion data!");
+            if (!motion) {
+                
+                if (error) {
+                    //
+                    // ...... error handling ......
+                    //
+                }
+            }
+            
+            NSLog(@"RotationRate X:%.2lf Y:%.2lf Z:%.2lf ",motion.userAcceleration.x,motion.userAcceleration.y,motion.userAcceleration.z);            
+            
+            // how can we use it ???
+            motion.attitude.pitch;
+            motion.attitude.quaternion;
+            motion.attitude.roll;
+            motion.attitude.yaw;
+            motion.timestamp;
+            
+            // NSLog(@"here we are handling the device motion data!");
         }];
         
         //self.motionMgr startDeviceMotionUpdatesUsingReferenceFrame:<#(CMAttitudeReferenceFrame)#> toQueue:<#(nonnull NSOperationQueue *)#> withHandler:<#^(CMDeviceMotion * _Nullable motion, NSError * _Nullable error)handler#>

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B66CBB626A032C3009EDD6C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66CBB526A032C3009EDD6C /* CoreLocation.framework */; };
+		8B66CBBD26A1194A009EDD6C /* SoLoMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CBBC26A1194A009EDD6C /* SoLoMobile.m */; };
+		8B66CC1A26A29ECD009EDD6C /* LocationManagerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CC1926A29ECD009EDD6C /* LocationManagerWrapper.m */; };
+		8B66CC1D26A2A33B009EDD6C /* MotionLocationMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CC1C26A2A33B009EDD6C /* MotionLocationMgr.m */; };
+		8B66CC2126A2D332009EDD6C /* MotionLocationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CC2026A2D332009EDD6C /* MotionLocationDelegate.m */; };
 		8B94F046268797B000AE5DBB /* TrackerMotionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B94F045268797B000AE5DBB /* TrackerMotionMgr.m */; };
 		8BCFBDC1268868CA003DD5EF /* MotionManagerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFBDC0268868CA003DD5EF /* MotionManagerWrapper.m */; };
 		8BDD2DCB2687875C000A82A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD2DCA2687875C000A82A3 /* Foundation.framework */; };
@@ -39,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B66CBB526A032C3009EDD6C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8B66CBBB26A1194A009EDD6C /* SoLoMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoLoMobile.h; path = Location/SoLoMobile.h; sourceTree = "<group>"; };
+		8B66CBBC26A1194A009EDD6C /* SoLoMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SoLoMobile.m; path = Location/SoLoMobile.m; sourceTree = "<group>"; };
+		8B66CC1826A29ECD009EDD6C /* LocationManagerWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationManagerWrapper.h; path = Location/LocationManagerWrapper.h; sourceTree = "<group>"; };
+		8B66CC1926A29ECD009EDD6C /* LocationManagerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LocationManagerWrapper.m; path = Location/LocationManagerWrapper.m; sourceTree = "<group>"; };
+		8B66CC1B26A2A33B009EDD6C /* MotionLocationMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MotionLocationMgr.h; path = Location/MotionLocationMgr.h; sourceTree = "<group>"; };
+		8B66CC1C26A2A33B009EDD6C /* MotionLocationMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MotionLocationMgr.m; path = Location/MotionLocationMgr.m; sourceTree = "<group>"; };
+		8B66CC1F26A2D332009EDD6C /* MotionLocationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MotionLocationDelegate.h; path = Location/MotionLocationDelegate.h; sourceTree = "<group>"; };
+		8B66CC2026A2D332009EDD6C /* MotionLocationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MotionLocationDelegate.m; path = Location/MotionLocationDelegate.m; sourceTree = "<group>"; };
 		8B94F044268797B000AE5DBB /* TrackerMotionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackerMotionMgr.h; path = Tracker/TrackerMotionMgr.h; sourceTree = "<group>"; };
 		8B94F045268797B000AE5DBB /* TrackerMotionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackerMotionMgr.m; path = Tracker/TrackerMotionMgr.m; sourceTree = "<group>"; };
 		8BCFBDBF268868CA003DD5EF /* MotionManagerWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MotionManagerWrapper.h; path = Tracker/MotionManagerWrapper.h; sourceTree = "<group>"; };
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B66CBB626A032C3009EDD6C /* CoreLocation.framework in Frameworks */,
 				8BDD2DCD2687875C000A82A3 /* CoreGraphics.framework in Frameworks */,
 				8BDD2DCF2687875C000A82A3 /* UIKit.framework in Frameworks */,
 				8BDD2DCB2687875C000A82A3 /* Foundation.framework in Frameworks */,
@@ -93,6 +108,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B66CBBA26A1191E009EDD6C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				8B66CBBB26A1194A009EDD6C /* SoLoMobile.h */,
+				8B66CBBC26A1194A009EDD6C /* SoLoMobile.m */,
+				8B66CC1826A29ECD009EDD6C /* LocationManagerWrapper.h */,
+				8B66CC1926A29ECD009EDD6C /* LocationManagerWrapper.m */,
+				8B66CC1B26A2A33B009EDD6C /* MotionLocationMgr.h */,
+				8B66CC1C26A2A33B009EDD6C /* MotionLocationMgr.m */,
+				8B66CC1F26A2D332009EDD6C /* MotionLocationDelegate.h */,
+				8B66CC2026A2D332009EDD6C /* MotionLocationDelegate.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		8B94F0432687976C00AE5DBB /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +156,7 @@
 		8BDD2DC92687875C000A82A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B66CBB526A032C3009EDD6C /* CoreLocation.framework */,
 				8BDD2DCA2687875C000A82A3 /* Foundation.framework */,
 				8BDD2DCC2687875C000A82A3 /* CoreGraphics.framework */,
 				8BDD2DCE2687875C000A82A3 /* UIKit.framework */,
@@ -137,6 +168,7 @@
 		8BDD2DD02687875C000A82A3 /* MotionTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8B66CBBA26A1191E009EDD6C /* Location */,
 				8B94F0432687976C00AE5DBB /* Tracker */,
 				8BDD2DD92687875C000A82A3 /* AppDelegate.h */,
 				8BDD2DDA2687875C000A82A3 /* AppDelegate.m */,
@@ -231,7 +263,8 @@
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					8BDD2DC62687875C000A82A3 = {
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 8NX6GA463C;
+						ProvisioningStyle = Automatic;
 					};
 					8BDD2DEA2687875D000A82A3 = {
 						TestTargetID = 8BDD2DC62687875C000A82A3;
@@ -289,8 +322,12 @@
 				8BDD2DE42687875C000A82A3 /* SecondViewController.m in Sources */,
 				8BDD2DDB2687875C000A82A3 /* AppDelegate.m in Sources */,
 				8B94F046268797B000AE5DBB /* TrackerMotionMgr.m in Sources */,
+				8B66CC2126A2D332009EDD6C /* MotionLocationDelegate.m in Sources */,
+				8B66CBBD26A1194A009EDD6C /* SoLoMobile.m in Sources */,
+				8B66CC1D26A2A33B009EDD6C /* MotionLocationMgr.m in Sources */,
 				8BCFBDC1268868CA003DD5EF /* MotionManagerWrapper.m in Sources */,
 				8BDD2DE12687875C000A82A3 /* FirstViewController.m in Sources */,
+				8B66CC1A26A29ECD009EDD6C /* LocationManagerWrapper.m in Sources */,
 				8BDD2DD72687875C000A82A3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,12 +453,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NX6GA463C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionTracker/MotionTracker-Prefix.pch";
 				INFOPLIST_FILE = "MotionTracker/MotionTracker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = DreamShip.MotionTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
@@ -433,12 +472,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NX6GA463C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionTracker/MotionTracker-Prefix.pch";
 				INFOPLIST_FILE = "MotionTracker/MotionTracker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = DreamShip.MotionTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
