@@ -15,7 +15,7 @@
 
 + (instancetype)sharedInstance;
 
-
+- (BOOL)startTracking;
 - (bool)isSupported;
 - (void)currentLocation;
 - (void)currentStatus;

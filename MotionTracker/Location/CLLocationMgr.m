@@ -8,13 +8,22 @@
 
 #import "CLLocationMgr.h"
 #import "CLLocationWrapper.h"
+#import "MavericksCLLocationDelegateImp.h"
+
 #import <CoreLocation/CoreLocation.h>
 
 
-@interface CLLocationMgr () <CLLocationManagerDelegate>
+//@interface CLLocationMgr () <CLLocationManagerDelegate>
+@interface CLLocationMgr ()
 
+//
+//@end
+//
 
 @property (nonatomic, strong) CLLocationManager* locMgr;
+@property (nonatomic, strong) MavericksCLLocationDelegateImp* impCLLocationDelegate;
+
+
 
 @end
 
@@ -40,11 +49,26 @@
 - (instancetype)init {
     
     if (self = [super init]) {
+        _impCLLocationDelegate = [[MavericksCLLocationDelegateImp alloc] init];
         _locMgr = [[CLLocationManager alloc] init];
-        _locMgr.delegate = self;
+        _locMgr.delegate = _impCLLocationDelegate;// [[MavericksCLLocationDelegateImp alloc] init];
+        //_locMgr.delegate = self;
     }
     
     return self;
+}
+
+
+- (BOOL)startTracking {
+    
+    if (nil == self.locMgr) {
+        return FALSE;
+    }
+    
+    [self.locMgr startUpdatingLocation];
+    [self.locMgr startUpdatingHeading];
+    
+    return TRUE;
 }
 
 

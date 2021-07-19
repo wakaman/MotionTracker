@@ -32,6 +32,7 @@
 		8B0219B026A4637A00713B3A /* CLLocationMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0219AF26A4637A00713B3A /* CLLocationMgr.m */; };
 		8B0219B226A463C400713B3A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0219B126A463C400713B3A /* CoreLocation.framework */; };
 		8B0219B426A463CC00713B3A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0219B326A463CC00713B3A /* CoreMotion.framework */; };
+		8BB68EA826A5AE38007B9226 /* MavericksCLLocationDelegateImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB68EA726A5AE38007B9226 /* MavericksCLLocationDelegateImp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		8B0219AF26A4637A00713B3A /* CLLocationMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLLocationMgr.m; path = Location/CLLocationMgr.m; sourceTree = "<group>"; };
 		8B0219B126A463C400713B3A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8B0219B326A463CC00713B3A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8BB68EA626A5AE38007B9226 /* MavericksCLLocationDelegateImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MavericksCLLocationDelegateImp.h; path = Location/MavericksCLLocationDelegateImp.h; sourceTree = "<group>"; };
+		8BB68EA726A5AE38007B9226 /* MavericksCLLocationDelegateImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MavericksCLLocationDelegateImp.m; path = Location/MavericksCLLocationDelegateImp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +198,8 @@
 				8B0219AC26A4636100713B3A /* CLLocationWrapper.m */,
 				8B0219AE26A4637A00713B3A /* CLLocationMgr.h */,
 				8B0219AF26A4637A00713B3A /* CLLocationMgr.m */,
+				8BB68EA626A5AE38007B9226 /* MavericksCLLocationDelegateImp.h */,
+				8BB68EA726A5AE38007B9226 /* MavericksCLLocationDelegateImp.m */,
 			);
 			name = Location;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				8B0219A126A45AF000713B3A /* MotionViewController.m in Sources */,
 				8B02197426A459B500713B3A /* AppDelegate.m in Sources */,
 				8B02197726A459B500713B3A /* MotionTracker.xcdatamodeld in Sources */,
+				8BB68EA826A5AE38007B9226 /* MavericksCLLocationDelegateImp.m in Sources */,
 				8B0219A626A45B1300713B3A /* MapViewController.m in Sources */,
 				8B0219AD26A4636100713B3A /* CLLocationWrapper.m in Sources */,
 				8B02197026A459B500713B3A /* main.m in Sources */,
@@ -523,6 +529,7 @@
 				8B02199226A459B500713B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B02199326A459B500713B3A /* Build configuration list for PBXNativeTarget "MotionTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +538,7 @@
 				8B02199526A459B500713B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

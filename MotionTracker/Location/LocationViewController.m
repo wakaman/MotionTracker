@@ -7,6 +7,8 @@
 //
 
 #import "LocationViewController.h"
+#import "CLLocationMgr.h"
+
 
 @interface LocationViewController ()
 
@@ -49,6 +51,9 @@
     
     NSString *message = [button currentTitle];     //取得button名称
     NSLog(@"new title: %@", message);
+    
+    
+    [[CLLocationMgr sharedInstance] startTracking];
     
     
     [sender setHidden:true];
